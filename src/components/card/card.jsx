@@ -4,7 +4,7 @@ import "./card.css";
 function Card({ products, onDelete, onEdit }) {
   return (
     <div className="product-container">
-      {products.map((product: any) => (
+      {products.map((product) => (
         <div key={product.id} className="product-card">
           <p> {product.category}</p>
           <img src={product.image} alt={product.title} />
